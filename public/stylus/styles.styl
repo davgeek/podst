@@ -1,0 +1,255 @@
+/* Styles by Dav Lizarraga */
+
+@import 'normalize.styl'
+
+/*===============================
+=            Settings            =
+===============================*/
+
+$blue = #22A7F0
+$blueDark = #2c3e50
+$red = #F22613
+$green = #2ECC71
+$yellow = #F7CA18
+$white = #FFF
+$highlight = #EE7964
+$dark = #2C3135
+$light = #EDEFF5
+$gray = #7f8c8d
+
+/*=====  End of Settings  ======*/
+
+/*====================================
+=            Applitaction            =
+====================================*/
+
+*
+	box-sizing border-box
+
+body
+	font-family 'Lato', sans-serif
+
+.wrapper_wide
+	width 90%
+	margin 0 auto
+
+.wrapper
+	width 80%
+
+.wrapper_skinny
+	width 60%
+	margin 0 auto
+
+.responsive_break
+	white-space nowrap
+
+.cf:before, .cf:after
+	content " "
+	display table
+
+.cf:after
+	clear both
+
+.button
+	color $white
+	text-decoration none
+	font-size 1rem
+	border-radius 2rem
+	outline none
+	border none
+
+.button_block
+	display block
+	margin 0 auto
+
+.button_highlight
+	background $highlight
+	transition background .4s ease-in-out
+	&:hover
+		background $white
+
+footer
+	padding 10px
+	text-align center
+	background $dark
+	.nav-footer
+		list-style none
+		margin 0
+		padding 0
+		li
+			display inline-block
+			margin 20px 25px 0 0
+			a
+				color #FFF
+				font-size 1rem
+				font-weight 400
+			&:last-child
+				margin-right 0	
+	p
+		color #FFF
+		font-size 1rem
+		font-weight 400
+		a
+			color #FFF
+			font-weight 700
+			&:hover
+				color $blue
+
+.podcast
+	.banner
+		background $dark	
+		//background-image url("../images/banner.jpg")
+		margin-bottom 1rem
+		background-size cover
+		text-align center
+		padding 5rem 0
+		h1
+			font-size 2.5rem
+			font-weight 700
+			color $white
+		.description
+			font-size 1.2rem
+			width 85%
+			line-height 1.75
+			margin 0 auto 2rem auto
+			color $white
+		a
+			font-size 1rem
+			font-weight 500
+			text-align center
+			color $white
+			display inline
+			padding .3rem .3rem
+			margin 0 .3rem
+			text-decoration none
+			&:hover
+				color $blue
+				
+	.episodes
+		padding 3rem 0
+		ul
+			list-style none
+			padding-left 0
+			li
+				padding-bottom 2rem
+				border-bottom 1px solid $light
+				margin-bottom 2rem
+				&:last-child
+					border-bottom none
+				a
+					color $dark
+					.thumbnail
+						width 22%
+						float left
+						img
+							width 10rem
+							max-width 100%
+							border-radius .35rem
+					.overview
+						width 76.5%
+						float left
+						margin-left 1.5%
+						.description
+							color $gray	
+	.episode
+		padding 4rem 0
+		margin-bottom 4rem
+		border-bottom 1px solid $light
+		.thumbnail
+			img
+				display block
+				margin 0 auto 2rem auto
+				width 15rem
+				max-width 100%
+				border-radius .35rem
+		h2
+			font-size 1.5rem
+			text-align center
+		.description
+			text-align center
+			font-size .9rem
+			line-height 1.7rem
+			color $dark
+		a
+			text-decoration none
+		.jp-jplayer, .jp-audio
+			width 70%
+			margin 3rem auto .5rem auto
+		.jp-title
+			font-size 12px
+			text-align center
+			color #999
+		.jp-title ul
+			padding 0
+			margin 0
+			list-style none
+		.jp-gui
+			position relative
+			background $blue
+			transition background .4s ease-in-out
+			border-radius 3px
+			overflow hidden
+			margin-top 10px
+		.jp-controls
+			padding 0
+			margin 0
+			list-style none
+			font-family "FontAwesome"
+		.jp-controls li
+			display inline
+		.jp-controls a
+			color $white
+		.jp-play, .jp-pause
+			width 60px
+			height 40px
+			display inline-block
+			text-align center
+			line-height 43px
+			border-right 1px solid $light
+		.jp-controls .jp-play:hover,.jp-controls .jp-pause:hover
+			background-color $dark
+		.jp-mute, .jp-unmute
+			position absolute
+			right 59px
+			top -3px
+			width 20px
+			height 40px
+			display inline-block
+			line-height 46px
+		.jp-mute
+			text-align left
+		.jp-time-holder
+			color $white
+			font-size 12px
+			line-height 14px
+			position absolute
+			right 90px
+			top 14px
+		.jp-progress
+			background-color $dark
+			border-radius 20px 20px 20px 20px
+			overflow hidden
+			position absolute
+			right 22%
+			top 15px
+			width 65%
+		.jp-play-bar
+			height 12px
+			background-color $white
+			border-radius 20px 20px 20px 20px
+		.jp-volume-bar
+			position absolute
+			right 10px
+			top 17px
+			width 45px
+			height 8px
+			border-radius 20px 20px 20px 20px
+			background-color $dark
+			overflow hidden
+		.jp-volume-bar-value
+			background-color $white
+			height 8px
+			border-radius 20px 20px 20px 20px
+
+/*=====  End of Application  ======*/
+

@@ -1,0 +1,9 @@
+{
+	"app_title": "Podst Podcasts",
+	"banner": "/images/banner.jpg",
+	"description": "A podcast publishing app made in Node.js to share your stories with the world",
+	"links": [
+		{"title":"iTunes", "url":"#"},
+		{"title":"Blog", "url":"#"}
+	]
+}
