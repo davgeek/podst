@@ -1,6 +1,8 @@
 Podst
 =====
 
+[![GitHub version](https://badge.fury.io/gh/davgeek%2Fpodst.svg)](https://badge.fury.io/gh/davgeek%2Fpodst)
+
 **Work in progress**
 
 A podcast publishing app made in Node.js to share your stories with the world.
