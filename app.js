@@ -4,14 +4,17 @@ var config = require('./config');
 var path = require('path');
 var fs = require('fs');
 var express = require('express');
-var settings = require("./settings.json");
+
+var assets_dir = '/themes/' + config.theme + '/assets/';
+var views_dir = '/themes/' + config.theme + '/';
 
 var app = express();
-app.set('settings', settings);
+app.set('config', config);
 app.set('port', config.port);
-app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
+app.set('views', __dirname + views_dir);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, assets_dir)));
 
 // setup routes
 require('./routes')(app);

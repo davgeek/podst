@@ -3,17 +3,18 @@
 
 exports = module.exports = function (app) {
 
-    var settings = app.get('settings');
+    var config = app.get('config');
 
     app.get('/', function(req, res){
-        res.render('public/home', {
-            settings: settings
+        res.render('home', {
+            app: config
         });
     });
 
     app.get('/episode/:episode', function(req, res){
-        res.render('public/episode', {
-            settings: settings
+        res.render('episode', {
+            title: 'hola mundo',
+            app: config
         });
     });
 
@@ -24,7 +25,7 @@ exports = module.exports = function (app) {
             res.send({error: 'Resource not found.'});
         }
         else {
-            res.render('http/404', {title: 'Error 404'});
+            res.render('404', {title: 'Error 404'});
         }
     });
 
