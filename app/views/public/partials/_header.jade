@@ -1,8 +1,0 @@
-.banner(style={'background-image': 'url('+ settings.banner || '../images/banner.jpg' +')'})
-	.wrapper_skinny
-		a(href='/')
-			h1 #{settings.app_title}
-		p.description #{settings.description}
-		each link in settings.links
-			a(href=link.url) #{link.title}
-		

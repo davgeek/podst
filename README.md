@@ -33,7 +33,6 @@ exports.secretText = 'yoursecretText';
 ## TODO
  - [ ] Tests
  - [ ] Scroll loading
- - [*] Theming
  - [ ] S3 direct upload
  - [ ] Add team users
  - [ ] Integrate RSS feed for podcasts

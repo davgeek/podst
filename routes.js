@@ -18,6 +18,10 @@ exports = module.exports = function (app) {
         });
     });
 
+    app.get('/admin', function(req, res){
+        res.render('admin/home');
+    });
+
 	// 404 error handler
     app.all('*', function (req, res) {
         res.status(404);

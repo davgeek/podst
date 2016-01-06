@@ -12,7 +12,7 @@ var app = express();
 app.set('config', config);
 app.set('port', config.port);
 app.set('view engine', 'jade');
-app.set('views', __dirname + views_dir);
+app.set('views', [ path.join(__dirname, views_dir), path.join(__dirname, '/app/views/') ]);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, assets_dir)));
 
