@@ -1,10 +1,25 @@
 /* Controller: index.js */
 
+var config = require('../../config');
+
 exports.home = function(req, res){
-	console.log(settings);
-	res.render('public/home', {title: 'Podst'});
+    res.render('home', {
+        app: config
+    });
+};
+
+exports.episodes = function(req, res){
+	if (req.xhr) {
+    	res.send({episodes: null});
+    } else {
+    	res.redirect('/');
+    }
+    
 };
 
 exports.episode = function(req, res){
-	res.render('public/episode', {title: req.params.episode});
+    res.render('episode', {
+        title: req.params.episode,
+        app: config
+    });
 };

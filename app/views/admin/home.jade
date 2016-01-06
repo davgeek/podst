@@ -1,1 +1,41 @@
-h1 Podst Admin
+extends layout
+block body	
+	.links
+		.wrapper_skinny
+			ul
+				li.current Episodes
+				li #[a(href='/admin/new') New Episode]
+				li #[a(href='/admin/settings') Settings]
+				li #[a(href='/') View Podcast]
+	.podcast
+		.episodes
+			.wrapper_skinny
+				ul.cf
+					li.cf
+						.thumbnail
+							img(src='/images/test.jpg')
+						.overview
+							h2 #3 - Revenge of the Sith
+							p.description Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+							.admin_links
+								a(href='#') Edit
+								a(href='#') Delete
+					li.cf
+						.thumbnail
+							img(src='/images/test.jpg')
+						.overview
+							h2 #2 - Attack of the Clones
+							p.description Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+							.admin_links
+									a(href='#') Edit
+									a(href='#') Delete
+
+					li.cf
+						.thumbnail
+							img(src='/images/test.jpg')
+						.overview
+							h2 #1 - The Phantom Menace
+							p.description Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+							.admin_links
+								a(href='#') Edit
+								a(href='#') Delete

@@ -3,24 +3,17 @@
 
 exports = module.exports = function (app) {
 
-    var config = app.get('config');
+    var adminController = require('./app/controllers/admin');
+    var publicController = require('./app/controllers/public');
+    
+    // admin routes
+    app.get('/admin', adminController.home);
+    app.get('/admin/new', adminController.create);
 
-    app.get('/', function(req, res){
-        res.render('home', {
-            app: config
-        });
-    });
-
-    app.get('/episode/:episode', function(req, res){
-        res.render('episode', {
-            title: 'hola mundo',
-            app: config
-        });
-    });
-
-    app.get('/admin', function(req, res){
-        res.render('admin/home');
-    });
+    // public routes
+    app.get('/', publicController.home);
+    app.get('/episodes', publicController.episodes);
+    app.get('/:episode', publicController.episode);
 
 	// 404 error handler
     app.all('*', function (req, res) {

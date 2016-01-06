@@ -1,0 +1,565 @@
+/* Styles by Dav Lizarraga */
+/* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+/*===============================
+=            Settings            =
+===============================*/
+/*=====  End of Settings  ======*/
+/*====================================
+=            Applitaction            =
+====================================*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.wrapper_wide {
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 80%;
+}
+.wrapper_skinny {
+  width: 60%;
+  margin: 0 auto;
+}
+.responsive_break {
+  white-space: nowrap;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.button {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+.button_block {
+  display: block;
+  margin: 0 auto;
+}
+.button_highlight {
+  background: #22a7f0;
+  transition: background 0.4s ease-in-out;
+}
+.button_highlight:hover {
+  background: #2c3e50;
+}
+.button_white {
+  background: #fff;
+  color: #2c3135;
+  transition: background 0.4s ease-in-out;
+}
+.button_white:hover {
+  background: #2c3135;
+}
+header {
+  color: #fff;
+  background: #2c3e50;
+  padding: 2rem 0;
+}
+header .logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 2rem;
+  position: relative;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+header nav ul li a:hover {
+  color: #22a7f0;
+}
+.links {
+  text-align: center;
+  padding: 1rem 0;
+}
+.links ul {
+  list-style: none;
+  padding-left: 0;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #edeff5;
+}
+.links ul li {
+  display: inline;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+.links ul li a {
+  color: #2c3135;
+  text-decoration: none;
+}
+.links ul li a:hover {
+  color: #22a7f0;
+}
+.links ul .current {
+  color: #22a7f0;
+}
+.form {
+  padding: 2rem 3.5%;
+  background: #fff;
+  border-radius: 0.35rem;
+}
+.form .title {
+  color: #2c3135;
+  text-align: center;
+}
+.form .field {
+  margin: 0.5rem 0 1.5rem 0;
+}
+input[type="email"],
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 1px solid #2c3135;
+  border-radius: 0.35rem;
+  margin-top: 0.5rem;
+}
+input[type='file'] {
+  margin-top: 0.5rem;
+}
+textarea {
+  height: 8rem;
+}
+footer {
+  padding: 10px;
+  text-align: center;
+  background: #2c3135;
+}
+footer .nav-footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .nav-footer li {
+  display: inline-block;
+  margin: 20px 25px 0 0;
+}
+footer .nav-footer li a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer .nav-footer li:last-child {
+  margin-right: 0;
+}
+footer p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer p a {
+  color: #fff;
+  font-weight: 700;
+}
+footer p a:hover {
+  color: #22a7f0;
+}
+.podcast .banner {
+  background: #2c3135;
+  margin-bottom: 1rem;
+  background-size: cover;
+  text-align: center;
+  padding: 5rem 0;
+}
+.podcast .banner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.podcast .banner .description {
+  font-size: 1.2rem;
+  width: 85%;
+  line-height: 1.75;
+  margin: 0 auto 2rem auto;
+  color: #fff;
+}
+.podcast .banner a {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  display: inline;
+  padding: 0.3rem 0.3rem;
+  margin: 0 0.3rem;
+  text-decoration: none;
+}
+.podcast .banner a:hover {
+  color: #22a7f0;
+}
+.podcast .episodes {
+  padding: 3rem 0;
+}
+.podcast .episodes ul {
+  list-style: none;
+  padding-left: 0;
+}
+.podcast .episodes ul li {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #edeff5;
+  margin-bottom: 2rem;
+}
+.podcast .episodes ul li:last-child {
+  border-bottom: none;
+}
+.podcast .episodes ul li .thumbnail {
+  width: 22%;
+  float: left;
+}
+.podcast .episodes ul li .thumbnail img {
+  width: 10rem;
+  max-width: 100%;
+  border-radius: 0.35rem;
+}
+.podcast .episodes ul li .overview {
+  width: 76.5%;
+  float: left;
+  margin-left: 1.5%;
+}
+.podcast .episodes ul li .overview h2 a {
+  color: #2c3135;
+  text-decoration: none;
+}
+.podcast .episodes ul li .overview .description {
+  color: #7f8c8d;
+}
+.podcast .episodes ul li .overview .admin_links {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.podcast .episodes ul li .overview .admin_links a {
+  color: #22a7f0;
+  margin-right: 1rem;
+}
+.podcast .episode {
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #edeff5;
+}
+.podcast .episode .thumbnail img {
+  display: block;
+  margin: 0 auto 2rem auto;
+  width: 15rem;
+  max-width: 100%;
+  border-radius: 0.35rem;
+}
+.podcast .episode h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.podcast .episode .description {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  color: #2c3135;
+}
+.podcast .episode a {
+  text-decoration: none;
+}
+.podcast .episode .jp-jplayer,
+.podcast .episode .jp-audio {
+  width: 70%;
+  margin: 3rem auto 0.5rem auto;
+}
+.podcast .episode .jp-title {
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+}
+.podcast .episode .jp-title ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.podcast .episode .jp-gui {
+  position: relative;
+  background: #22a7f0;
+  transition: background 0.4s ease-in-out;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.podcast .episode .jp-controls {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "FontAwesome";
+}
+.podcast .episode .jp-controls li {
+  display: inline;
+}
+.podcast .episode .jp-controls a {
+  color: #fff;
+}
+.podcast .episode .jp-play,
+.podcast .episode .jp-pause {
+  width: 60px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-right: 1px solid #edeff5;
+}
+.podcast .episode .jp-controls .jp-play:hover,
+.podcast .episode .jp-controls .jp-pause:hover {
+  background-color: #2c3135;
+}
+.podcast .episode .jp-mute,
+.podcast .episode .jp-unmute {
+  position: absolute;
+  right: 59px;
+  top: -3px;
+  width: 20px;
+  height: 40px;
+  display: inline-block;
+  line-height: 46px;
+}
+.podcast .episode .jp-mute {
+  text-align: left;
+}
+.podcast .episode .jp-time-holder {
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  right: 90px;
+  top: 14px;
+}
+.podcast .episode .jp-progress {
+  background-color: #2c3135;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 22%;
+  top: 15px;
+  width: 65%;
+}
+.podcast .episode .jp-play-bar {
+  height: 12px;
+  background-color: #fff;
+  border-radius: 20px 20px 20px 20px;
+}
+.podcast .episode .jp-volume-bar {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  width: 45px;
+  height: 8px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #2c3135;
+  overflow: hidden;
+}
+.podcast .episode .jp-volume-bar-value {
+  background-color: #fff;
+  height: 8px;
+  border-radius: 20px 20px 20px 20px;
+}
+/*=====  End of Application  ======*/

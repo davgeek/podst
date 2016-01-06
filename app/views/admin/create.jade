@@ -1,0 +1,25 @@
+extends layout
+block body
+	.links
+		.wrapper_skinny
+			ul
+				li #[a(href='/admin') Episodes]
+				li.current New Episode
+				li #[a(href='/admin/settings') Settings]
+				li #[a(href='/') View Podcast]
+	form.form
+		.wrapper_skinny
+			h2.title New Episode
+			.field
+				label Title #[br]
+				input(type='text')
+			.field
+				label Description #[br]
+				textarea
+			.field
+				label Thumbnail #[br]
+				input(type='file')
+			.field
+				label Mp3 #[br]
+				input(type='file')
+			input(type='submit' value='Save').button.button_highlight.button_block
